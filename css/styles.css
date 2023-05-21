@@ -380,7 +380,6 @@ img {
 .filter-btn-link {
     height: 48px;
     min-width: 69px;
-    padding: 12px, 24px 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
@@ -391,6 +390,10 @@ img {
     cursor: pointer;
     color: var(--button-color);
     background-color: var(--footer-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .filter-btn-link:hover,
