@@ -44,6 +44,8 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -248,7 +250,7 @@ img {
 }
 
 .media-list-item {
-    width: calc((100%-48%)/3);
+    width: calc((100%-48px)/3);
 }
 
 
@@ -378,7 +380,7 @@ img {
 .filter-btn-link {
     height: 48px;
     min-width: 69px;
-    padding: 12px, 24px;
+    padding: 12px, 24px 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
@@ -407,15 +409,15 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    margin: 0;
+    padding: 0;
 }
 
 
-/* ??????? */
 .card-item {
-    width: calc((100%-48%)/3);
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 60px;
+    width: calc((100%-48px)/3);
+    margin: 0;
+    padding: 0;
 }
 
 .card-info {
