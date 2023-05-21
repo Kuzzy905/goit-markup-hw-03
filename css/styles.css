@@ -42,7 +42,7 @@ ol {
     padding: 0;
 }
 
-.img {
+img {
     display: block;
 }
 
@@ -411,7 +411,7 @@ ol {
 
 
 /* ??????? */
-.item {
+.card-item {
     width: calc((100%-48%)/3);
     display: flex;
     padding-top: 24px;
