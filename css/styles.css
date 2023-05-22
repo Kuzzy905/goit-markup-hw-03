@@ -142,7 +142,6 @@ img {
 .hero {
     background-color: var(--headers-color);
     display: flex;
-    margin-bottom: 60px;
     padding: 188px 0;
 }
 
@@ -160,7 +159,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white-color);
-    padding-top: 188px;
     max-width: 496px;
     margin: 0 auto;
 
@@ -178,7 +176,6 @@ img {
     color: var(--white-color);
     background-color: var(--button-color);
     margin-top: 48px;
-    margin-bottom: 188px;
     border: none;
     border-radius: 4px;
 }
@@ -231,7 +228,6 @@ img {
 
 .media {
     padding-bottom: 120px;
-    padding-top: 60px;
 }
 
 .media-list {
@@ -295,9 +291,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--headers-color);
     background-color: var(--white-color);
-    padding-top: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
     margin-bottom: 8px;
 }
 
@@ -308,9 +301,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     background-color: var(--white-color);
-    padding-bottom: 32px;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 .team-member-info {
@@ -350,17 +340,11 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-color);
-    margin-top: 16px;
-    min-width: 264px;
+    max-width: 264px;
 }
 
 
-.footer-container {
-    width: 264px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: absolute;
-}
+.footer-container {}
 
 /* Filter */
 
@@ -373,7 +357,6 @@ img {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
     margin-bottom: 72px;
 }
 
