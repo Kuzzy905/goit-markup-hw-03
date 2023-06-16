@@ -387,12 +387,15 @@ img {
 
 /* Customers */
 
-
-.customers-container {
-    width: 1128px;
+.customers {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+
+.customers-container {
+    width: 1128px;
+} 
 
 
 .customers-header {
@@ -490,6 +493,7 @@ img {
 }
 .footer-social-list {
     display: flex;
+    gap: 16px;
 
 }
 
@@ -595,6 +599,12 @@ img {
     margin: 0;
     padding: 0;
 }
+
+.photo-link:hover, 
+.photo-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .card-item:hover,
 .card-item:focus {
