@@ -373,7 +373,14 @@ img {
 
 }
 
-.team-member-soc-link:hover {
+ /* added 1*/
+
+.team-member-soc-icon {
+    fill:#F4F4FD;
+}
+
+.team-member-soc-link:hover,
+.team-member-soc-link:focus {
     background-color:#404BBF;
 }
 
@@ -383,7 +390,8 @@ img {
 
 .customers-container {
     width: 1128px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -394,7 +402,6 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--headers-color);
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -412,6 +419,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #8E8F99;
     fill:#8E8F99;
 }
 
@@ -421,13 +429,16 @@ img {
 }
 
 .fcustomers-item:hover,
-.customers-item:focus
+.customers-item:focus,
 .customer-link:hover,
 .customer-link:focus {
-    fill: #404BBF;
+    color: #404BBF;
     border-color: #404BBF;
 }
 
+.customers-icon {
+    fill: currentColor;
+}
 
 /* FOOTER */
 
@@ -466,9 +477,17 @@ img {
 
 .footer-container-general {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
+.footer-container {
+    margin-right: 120px;
+}
+
+
+.container-footer-social {
+    
+}
 .footer-social-list {
     display: flex;
 
@@ -577,7 +596,8 @@ img {
     padding: 0;
 }
 
-.card-item:hover {
+.card-item:hover,
+.card-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
