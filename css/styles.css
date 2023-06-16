@@ -63,6 +63,8 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -141,8 +143,14 @@ img {
 
 .hero {
     background-color: var(--headers-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+   max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 .hero-container {
@@ -237,6 +245,23 @@ img {
 
 }
 
+.advantage-icon-box {
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+}
+
+.advantage-icon {
+    display: flex;
+} 
+
+
 /* Media */
 
 .media {
@@ -296,6 +321,10 @@ img {
     align-items: center;
 }
 
+.team-member {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .team-member-name {
     text-align: center;
     font-weight: 500;
@@ -314,14 +343,93 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     background-color: var(--white-color);
+    margin-bottom: 8px;
 }
 
 .team-member-info {
     padding: 32px 16px;
 }
 
+.team-member-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
-/* Footer */
+.team-member-soc-item {
+    width: 40px;
+    height: 40px;
+
+}
+
+.team-member-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team-member-soc-link:hover {
+    background-color:#404BBF;
+}
+
+
+/* Customers */
+
+
+.customers-container {
+    width: 1128px;
+    margin-bottom: 120px;
+}
+
+
+.customers-header {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headers-color);
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customer-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill:#8E8F99;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+}
+
+.fcustomers-item:hover,
+.customers-item:focus
+.customer-link:hover,
+.customer-link:focus {
+    fill: #404BBF;
+    border-color: #404BBF;
+}
+
+
+/* FOOTER */
 
 .footer {
     min-height: 312px;
@@ -356,8 +464,58 @@ img {
     max-width: 264px;
 }
 
+.footer-container-general {
+    display: flex;
+    align-items: flex-start;
+}
 
-.footer-container {}
+.footer-social-list {
+    display: flex;
+
+}
+
+.footer-social-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+}
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer-social-item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    fill: #F4F4FD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;;
+}
 
 /* Filter */
 
@@ -397,6 +555,7 @@ img {
     color: var(--white-color);
     background-color: var(--hover-color);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -416,6 +575,10 @@ img {
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+.card-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-info {
