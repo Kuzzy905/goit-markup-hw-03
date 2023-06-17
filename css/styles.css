@@ -106,10 +106,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--headers-color);
     padding: 24px 0;
-    transition-property: color var(--hover-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color #404bbf;
     position: relative;
+
 }
 
 .header-link:hover,
@@ -126,6 +126,7 @@ img {
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
+    bottom: -1px;
 }
 
 .header-address {
@@ -146,9 +147,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition-property: color var(--hover-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contact:hover,
@@ -205,8 +204,7 @@ img {
     border: none;
     border-radius: 4px;
     transition-property: background-color var(--hover-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -399,8 +397,7 @@ img {
 .team-member-soc-icon {
     fill: #F4F4FD;
     transition-property: background-color #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -450,16 +447,15 @@ img {
     color: #8E8F99;
     fill: #8E8F99;
     transition-property: background-color #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customers-item {
     width: 168px;
     height: 88px;
     transition-property: background-color #404BBF;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fcustomers-item:hover,
@@ -555,8 +551,7 @@ img {
     align-items: center;
     justify-content: center;
     transition-property: background-color #31D0AA;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -596,8 +591,7 @@ img {
     padding-left: 24px;
     padding-right: 24px;
     transition-property: color var(--white-color) background-color var(--hover-color) border 1px solid transparent box-shadow 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn-link:hover,
@@ -625,9 +619,7 @@ img {
     display: flex;
     margin: 0;
     padding: 0;
-    transition-property: box-shadow 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Why is this here? */
@@ -657,6 +649,7 @@ img {
     color: var(--headers-color);
     margin-bottom: 8px;
 }
+
 .card-text {
     font-size: 16px;
     line-height: 1.5;
@@ -664,7 +657,8 @@ img {
     color: var(--text-color);
 }
 
-.photo-link:hover .card-cover-text {
+.photo-link:hover .card-cover-text,
+.photo-link:focus .card-cover-text {
     transform: translateY(0);
 
 }
@@ -679,13 +673,18 @@ img {
     top: 0;
     color: #F4F4FD;
     font-size: 16px;
+    letter-spacing: 0.02em;
     line-height: 1.5;
-    padding: 32px 40px 32px;
-    background-color: rgba(77, 90, 229, 0.8);
+    padding: 40px 32px;
+    background-color: #4d5ae5;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 300ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+/* Modal */
+
 
 .backdrop {
     position: fixed;
@@ -693,7 +692,7 @@ img {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     top: 0;
-    transition: opacity 300ms linear, visibility 300ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -705,8 +704,10 @@ img {
     width: 408px;
     min-height: 584px;
     background-color: rgba(252, 252, 252, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 30px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -714,19 +715,38 @@ img {
 }
 
 .modal-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(231, 233, 252, 1);
-    width: 24px;
+    top: 24px;
+    right: 24px;
     height: 24px;
+    width: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: block;
     margin-left: auto;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close:hover,
+.modal-close:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+
 .is-hidden {
-    visibility: 0;
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
 
+.close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
