@@ -511,7 +511,6 @@ img {
 .footer-container-general {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
 
 .footer-container {
@@ -630,9 +629,9 @@ img {
 }
 
 .modal-footer-cont {
-    display: flex;
     align-items: baseline;
     justify-content: space-between;
+    margin-left: auto;
 
 }
 
