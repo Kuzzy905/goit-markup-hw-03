@@ -33,6 +33,12 @@
 
     /* header */
 
+
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     .header-list {
         display: flex;
         gap: 40px;
@@ -44,10 +50,18 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--headers-color);
-        padding: 24px 0;
+        display: block;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: color #404bbf;
         position: relative;
+        gap: 12px;
+    }
+
+    .header-link-contact {
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 1.16;
+        letter-spacing: 0.48px;
     }
 
     .header-link:hover,
@@ -59,6 +73,7 @@
     .header-address {
         font-style: normal;
         display: flex;
+        gap: 12px;
     }
 
     .hero {
@@ -69,7 +84,7 @@
         background-position: center;
         background-size: cover;
         display: flex;
-        padding: 188px 0;
+        padding: 112px 0;
         margin: 0 auto;
     }
 
@@ -90,25 +105,16 @@
         padding-bottom: 96px;
     }
 
+    .team-list {
+        gap: 72px 24px;
+    }
+
     .advantage-item {
         width: calc((100% - 24px) / 2);
         margin-bottom: 0;
     }
 
-    .advantages {
-        margin-top: 96px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-
     .advantage-name {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #2E2F42;
-        margin-bottom: 8px;
         text-align: left;
     }
 
@@ -117,24 +123,21 @@
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
-        margin-bottom: 96px;
     }
-
-    .customers-item {
-        max-width: 168px;
-        margin-bottom: 72px;
-    }
-
 
     .customers {
-        padding-top: 22px;
+        padding-top: 96px;
         padding-bottom: 96px;
     }
 
     .customers-list {
-        margin-top: 72px;
-
+        gap: 72px 24px;
     }
+
+    .customers-item {
+        max-width: 168px;
+    }
+
 
     /* footer */
 
@@ -209,6 +212,15 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 /* DESKTOP */
 
 
@@ -228,6 +240,18 @@
 
     .header-link-contact {
         margin-right: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+
+    .header-link {
+        color: var(--navyblue, #2E2F42);
+        font-family: 'Roboto';
+        letter-spacing: 0.32px;
     }
 
     .hero {
@@ -242,6 +266,12 @@
         margin: 0 auto;
     }
 
+    .hero-title {
+        line-height: 1.07;
+        letter-spacing: 0.72px;
+        text-transform: none;
+    }
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -252,6 +282,11 @@
 
     .team>.container {
         max-width: 1158px;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .team-list {
@@ -272,8 +307,10 @@
         gap: 24px;
     }
 
+
     .advantages {
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .advantage-icon-box {
@@ -295,6 +332,10 @@
         font-weight: 500;
         font-size: 20px;
         color: #2E2F42;
+        line-height: 1/2;
+        letter-spacing: 0.4px;
+        text-transform: none;
+
     }
 
     .advantage-icon {
@@ -302,34 +343,33 @@
         align-items: center;
     }
 
-    .container {
-        margin-bottom: 120px;
-    }
 
     /* media */
 
     .media {
         display: contents;
+        padding-bottom: 120px;
     }
 
     .media>.container {
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
+
+
     .customers-container {
-        width: 1128px;
+        width: 100%;
     }
 
     .customers-item {
         max-width: 168px;
     }
 
-    .container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
+
 
     /* footer */
 
@@ -341,9 +381,13 @@
         padding-bottom: 100px;
     }
 
+    .footer-container {
+        margin-right: 120px;
+    }
+
     .footer-container-general {
-        width: ;
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
         justify-content: space-between;
         padding: 0 15px;
@@ -355,14 +399,9 @@
 
     .modal-footer-form {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 24px;
         color: #FFFFFF;
-        gap: 24px;
-    }
+        justify-content: flex-end;
 
-    .modal-footer-text {
-        padding-left: 60px;
     }
 
     .footer-input {
@@ -386,6 +425,10 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: baseline;
-        padding-left: 15px;
+        margin-left: auto;
+    }
+
+    .modal-footer-text {
+        padding-left: 85px;
     }
 }
