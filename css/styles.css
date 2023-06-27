@@ -228,9 +228,15 @@ img {
 
 .mob-soc-list {
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    justify-content: center;
+    gap: 56px;
 
+}
+
+.mob-menu-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .mob-soc-item {
@@ -984,7 +990,8 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
-    padding-left: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 12px;
     color: #2E2F42;
     outline: transparent;
